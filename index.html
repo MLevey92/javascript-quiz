@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <title>Javascript Quiz</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="highscores.html">View Highscores</a>
+            <p>Time: <span id="time"></span></p>
+        </header>
+        <!--Start quiz section starts active-->
+        <section class="start-container active">
+            <h1>Coding Quiz Challenge</h1>
+            <p>
+                Try to answer the following code-related questions within the time limit.
+                Keep in mind that incorrect answers will penalize your score/time by 10 seconds!
+            </p>
+            <button id="startButton">
+                Start Quiz
+            </button>
+        </section>
+        
+        <!--Questions section starts inactive-->
+        <section class="question-container inactive available">
+            <h1>Commonly used data types DO NOT include:</h1>
+            <div class="choices">
+                <button class="answer wrong">String</button>
+                <button class="answer wrong">Boolean</button>
+                <button class="answer correct">Alert</button>
+                <button class="answer wrong">Number</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section>
+
+        <section class="question-container inactive available">
+            <h1>Arrays in Javascript can be used to store _______.</h1>
+            <div class="choices">
+                <button class="answer wrong">Booleans</button>
+                <button class="answer wrong">Other arrays</button>
+                <button class="answer wrong">Strings and Numbers</button>
+                <button class="answer correct">All of the above</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section>
+
+        <section class="question-container inactive available">
+            <h1>The condition of an If/Else statement is contained in:</h1>
+            <div class="choices">
+                <button class="answer correct">Parenthesis</button>
+                <button class="answer wrong">Quotes</button>
+                <button class="answer wrong">Curly Braces</button>
+                <button class="answer wrong">Square brackets</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section>
+
+        <section class="question-container inactive available">
+            <h1>Inside which HTML element do we put the JavaScript?</h1>
+            <div class="choices">
+                <button class="answer wrong">&lt;scripting&gt;</button>
+                <button class="answer correct">&lt;script&gt;</button>
+                <button class="answer wrong">&lt;js&gt;</button>
+                <button class="answer wrong">&lt;javascript&gt;</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section>
+
+        <section class="question-container inactive available">
+            <h1>Where is the correct place to insert a JavaScript?</h1>
+            <div class="choices">
+                <button class="answer wrong">Both the &lt;head&gt; and the &lt;body&gt; section are correct</button>
+                <button class="answer correct">The &lt;body&gt; section</button>
+                <button class="answer wrong">The &lt;head&gt; section</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section>
+
+        <section class="question-container inactive available">
+            <h1>How do you write "Hello World" in an alert box?</h1>
+            <div class="choices">
+                <button class="answer wrong">alertBox("Hello World");</button>
+                <button class="answer wrong">msg("Hello World");</button>
+                <button class="answer wrong">msgBox("Hello World");</button>
+                <button class="answer correct">alert("Hello World");</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section>
+        
+        <section class="question-container inactive available">
+            <h1>How do you create a function named myFunction in JavaScript?</h1>
+            <div class="choices">
+                <button class="answer correct">function myFunction()</button>
+                <button class="answer wrong">function:myFunction()</button>
+                <button class="answer wrong">myFunction Function()</button>
+                <button class="answer wrong">function = myFunction()</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section> 
+
+        <section class="question-container inactive available">
+            <h1>JavaScript is the same as Java</h1>
+            <div class="choices">
+                <button class="answer wrong">True</button>
+                <button class="answer correct">False</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section> 
+
+        <section class="question-container inactive available">
+            <h1>How do you write "Hello World" in an alert box?</h1>
+            <div class="choices">
+                <button class="answer wrong">alertBox("Hello World");</button>
+                <button class="answer wrong">msg("Hello World");</button>
+                <button class="answer wrong">msgBox("Hello World");</button>
+                <button class="answer correct">alert("Hello World");</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section>
+        
+        <section class="question-container inactive available">
+            <h1>How do you declare a JavaScript variable?</h1>
+            <div class="choices">
+                <button class="answer wrong">variable carName</button>
+                <button class="answer wrong">v carName</button>
+                <button class="answer correct">var carName</button>
+            </div>
+
+            <!--empty div dynamically shows "Wrong" or "Correct"-->
+            <p class="result"></p>
+        </section> 
+
+        <!--displays at end of game-->
+        <section class="end-container inactive">
+            <h1>End of Game!</h1>
+            <div>
+                <p>Correct: <span id="correct"></span></p>
+                <p>Wrong: <span id="wrong"></span></p>
+            </div>
+            <p>Final Score: <span id="score"></span></p>
+            <form>
+                <label for="initials">Initials:</label>
+                <input type="text" id="initials" name="initials">
+                <button>Submit</button>
+            </form>
+        </section>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+
+</html>

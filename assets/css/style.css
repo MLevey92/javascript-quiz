@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "robotoHeavy";
+    src: url("../fonts/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "robotoLight";
+    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+
+* {
+    font-family: 'robotoLight';
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4D7EA8;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 16px 14px;
+}
+
+a:hover {
+    background-color: #EDEDF4;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container {
+    text-align: center;
+    margin: 10% 20%;
+}
+
+.start-container.active {
+    text-align: center;
+    margin: 10% 20%;
+}
+
+.start-container.inactive{
+    display: none;
+}
+
+.end-container.active {
+    text-align: center;
+    margin: 10% 20%;
+}
+
+.end-container.inactive {
+    display: none;
+}
+
+.question-container.active {
+    margin: 10% 20%;
+}
+
+.question-container.inactive {
+    display: none;
+}
+
+.result {
+    border-top: 2px solid lightgrey;
+}
+
+.choices button{
+    display: block;
+}
+
+/*
+highscores page
+*/
+
+
+li {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 20px;
+}
+
+li:nth-child(odd) {
+    background-color: #EDEDF4;
+}
